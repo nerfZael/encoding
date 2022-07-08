@@ -1,0 +1,38 @@
+{
+  "name": "@nerfzael/encoding",
+  "version": "0.1.0",
+  "main": "bin/index.js",
+  "types": "bin/index.d.ts",
+  "author": "nerfZael",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "/bin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nerfZael/encoding.git"
+  },
+  "keywords": [
+    "ethers",
+    "encoding",
+    "decoding",
+    "file",
+    "files"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "test": "jest --passWithNoTests --verbose"
+  },
+  "dependencies": {
+    "ethers": "5.6.9",
+    "typescript": "4.4.2"
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.8",
+    "@types/node": "16.11.11",
+    "jest": "28.0.5",
+    "ts-jest": "28.0.5",
+    "ts-node": "10.3.0"
+  }
+}
