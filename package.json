@@ -1,6 +1,6 @@
 {
   "name": "@nerfzael/encoding",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "main": "bin/index.js",
   "types": "bin/index.d.ts",
   "author": "nerfZael",
@@ -29,6 +29,7 @@
     "typescript": "4.4.2"
   },
   "devDependencies": {
+    "@types/jest": "^28.1.4",
     "@types/node": "16.11.11",
     "jest": "28.1.2",
     "ts-jest": "28.0.5",

@@ -1,17 +1,7 @@
-import { concat } from "ethers/lib/utils";
-import { decodeBytes } from "../decodeBytes";
-import { encodeBytes } from "../encodeBytes";
 import { decodeFiles } from "../files/decodeFiles";
 import { encodeFiles } from "../files/encodeFiles";
-import { generateArray } from "./utils.ts/generateArray";
 
 describe("Files", () => {
-  beforeAll(async () => {
-  });
-
-  afterAll(async () => {
-  });
-
   it("can encode and decode a file", async () => {
     const bytes = new Uint8Array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
  
@@ -20,11 +10,12 @@ describe("Files", () => {
         path: "file.txt",
         content: bytes
       }],
-      1
+      1,
+      2
     );
 
     expect(
-      decodeFiles(encodedFiles, 1, 1)
+      decodeFiles(encodedFiles, 1, 2)
     ).toEqual(
       [
         {
@@ -50,11 +41,12 @@ describe("Files", () => {
           content: bytes2
         }
       ],
-      1
+      1,
+      2
     );
 
     expect(
-      decodeFiles(encodedFiles, 1, 1)
+      decodeFiles(encodedFiles, 1, 2)
     ).toEqual(
       [
         {

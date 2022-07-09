@@ -4,11 +4,6 @@ import { encodeBytes } from "../encodeBytes";
 import { generateArray } from "./utils.ts/generateArray";
 
 describe("Byte arrays", () => {
-  beforeAll(async () => {
-  });
-
-  afterAll(async () => {
-  });
   it("can encode byte array", async () => {
     const bytes = new Uint8Array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
  

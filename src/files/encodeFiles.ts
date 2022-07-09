@@ -3,7 +3,7 @@ import { concat } from "ethers/lib/utils";
 import { encodeBytes } from "../encodeBytes";
 import { InMemoryFile } from "./InMemoryFile";
 
-export const encodeFiles = (files: InMemoryFile[], bytesForFileSize: number): Uint8Array => {
+export const encodeFiles = (files: InMemoryFile[], bytesForFilePath: number, bytesForFileSize: number): Uint8Array => {
   let array: Uint8Array = new Uint8Array();
   for(const file of files) {
     if(!file.content) {
@@ -15,7 +15,7 @@ export const encodeFiles = (files: InMemoryFile[], bytesForFileSize: number): Ui
 
     array = concat([
       array,
-      encodeBytes(filePathBytes, bytesForFileSize),
+      encodeBytes(filePathBytes, bytesForFilePath),
       encodeBytes(fileBytes, bytesForFileSize)
     ]);
   }
