@@ -1,6 +1,6 @@
 {
   "name": "@nerfzael/encoding",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "main": "bin/index.js",
   "types": "bin/index.d.ts",
   "author": "nerfZael",
