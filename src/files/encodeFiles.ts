@@ -1,7 +1,7 @@
+import { InMemoryFile } from "@nerfzael/memory-fs";
 import { ethers } from "ethers";
 import { concat } from "ethers/lib/utils";
 import { encodeBytes } from "../encodeBytes";
-import { InMemoryFile } from "./InMemoryFile";
 
 export const encodeFiles = (files: InMemoryFile[], bytesForFilePath: number, bytesForFileSize: number): Uint8Array => {
   let array: Uint8Array = new Uint8Array();

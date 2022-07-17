@@ -1,5 +1,5 @@
+import { InMemoryFile } from "@nerfzael/memory-fs";
 import { decodeFile } from "./decodeFile";
-import { InMemoryFile } from "./InMemoryFile";
 
 export const decodeFiles = (buffer: Uint8Array, bytesForFilePath: number, bytesForFileSize: number): InMemoryFile[] => {
   const files: InMemoryFile[] = [];

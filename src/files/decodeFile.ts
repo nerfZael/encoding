@@ -1,6 +1,6 @@
+import { InMemoryFile } from "@nerfzael/memory-fs";
 import { ethers } from "ethers";
 import { decodeBytes } from "../decodeBytes";
-import { InMemoryFile } from "./InMemoryFile";
 
 export const decodeFile = (buffer: Uint8Array, bytesForFilePath: number, bytesForFileSize: number, offset: number): {
   file: InMemoryFile,
